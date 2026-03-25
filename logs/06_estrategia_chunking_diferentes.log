@@ -1,0 +1,692 @@
+2026-03-13 17:17:23,904 - INFO - HTTP Request: GET https://3e2d408c-9df9-477a-94d0-caddae08d730.us-east-1-1.aws.cloud.qdrant.io:6333/collections/futbol-peruano-hybrid-doc-chunks "HTTP/1.1 200 OK"
+2026-03-13 17:17:25,237 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-03-13 17:17:25,313 - INFO - HTTP Request: GET https://3e2d408c-9df9-477a-94d0-caddae08d730.us-east-1-1.aws.cloud.qdrant.io:6333/collections/futbol-peruano-hybrid-doc-chunks "HTTP/1.1 200 OK"
+2026-03-13 17:17:25,556 - INFO - HTTP Request: GET https://3e2d408c-9df9-477a-94d0-caddae08d730.us-east-1-1.aws.cloud.qdrant.io:6333/collections/futbol-peruano-hybrid-markdown-chunks "HTTP/1.1 200 OK"
+2026-03-13 17:17:25,641 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-03-13 17:17:25,733 - INFO - HTTP Request: GET https://3e2d408c-9df9-477a-94d0-caddae08d730.us-east-1-1.aws.cloud.qdrant.io:6333/collections/futbol-peruano-hybrid-markdown-chunks "HTTP/1.1 200 OK"
+2026-03-13 17:17:27,339 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-03-13 17:17:27,429 - INFO - HTTP Request: POST https://3e2d408c-9df9-477a-94d0-caddae08d730.us-east-1-1.aws.cloud.qdrant.io:6333/collections/futbol-peruano-hybrid-doc-chunks/points/query "HTTP/1.1 200 OK"
+2026-03-13 17:17:27,429 - INFO - *1 - id:d68ed3d6-6756-47ec-8a40-fca5a7444ad9 - Documento:
+↑ República, La (24 de mayo de 2019). [«Copa Bicentenario: Así quedaron los grupos del nuevo torneo peruano [FOTOS]»](https://larepublica.pe/deportes/1474945-copa-bicentenario-2019-quedaron-grupos-nuevo-torneo-peruano-liga-1-movistar-liga-2-futbol-peruano-alianza-lima-universitario-sporting-cristal) . larepublica.pe . Consultado el 30 de agosto de 2024 .
+↑ a b LR, Deportes (11 de mayo de 2020). «Copa Bicentenario suspendida: ¿Qué pasará con el cupo a la Sudamericana?» . larepublica.pe . Consultado el 27 de diciembre de 2023 .
+↑ Líbero (8 de agosto de 2022). «FPF no realizará la Copa Bicentenario ni el Alianza vs. Cristal por la Supercopa Peruana» . Consultado el 14 de agosto de 2022 .
+↑ Depor (14 de febrero de 2025). «Se cancela: Copa de la Liga Peruana no va más por decisión de la FPF» . Depor . Consultado el 14 de febrero de 2025 . « La decisión fue motivada por la empresa que tiene los derechos televisivos de la Liga1, 1190 Sports ».
+↑ Club Alianza Lima (2001). El Comercio, ed. «Copa Campeones del Perú 1919» .
+↑ «En el 2012 se jugará Copa Federación» . Perú 21 . 2011. Archivado desde el original el 1 de enero de 2012 . Consultado el 8 de enero de 2012 .
+2026-03-13 17:17:27,429 - INFO - *2 - id:b5bb6ff7-ccd0-48cb-9253-055ba3433f03 - Documento:
+2019
+Copa Bicentenario
+2020
+Supercopa Peruana
+2021
+Copa Bicentenario
+No hubo
+Copa de la Liga de Fútbol Profesional
+2026-03-13 17:17:27,429 - INFO - *3 - id:7a087dc4-1b83-4317-baaf-f660f3b6ec27 - Documento:
+Copa Bicentenario 2020
+Cancelada por la , (campeón Liga 1 2020) no tenía rival para disputarla (no hubo ).
+
+Federación Peruana de Fútbol
+Alianza Lima
+Liga1 2021
+Sporting Cristal
+Copa Bicentenario 2021
+Cancelada por decisión de la , (campeón ) y (campeón ) debían disputarla.
+
+
+Federación Peruana de Fútbol
+Alianza Lima
+Liga1 2022
+Cancelada por decisión de la , (campeón ) no tenía rival para disputarla (no hubo Copa Bicentenario 2022).
+
+Federación Peruana de Fútbol
+Universitario
+Liga1 2023
+Cancelada por decisión de la , (campeón ) no tenía rival para disputarla (no hubo Copa Bicentenario 2023).
+
+2026-03-13 17:17:28,337 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:28,428 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-03-13 17:17:28,517 - INFO - HTTP Request: POST https://3e2d408c-9df9-477a-94d0-caddae08d730.us-east-1-1.aws.cloud.qdrant.io:6333/collections/futbol-peruano-hybrid-doc-chunks/points/query "HTTP/1.1 200 OK"
+2026-03-13 17:17:28,517 - INFO - *1 - id:3c4eda87-2be4-41cc-a387-81f02f88df66 - Documento:
+Juan Aurich se consagró como campeón por primera vez en su historia, tras derrotar en la final a Alianza Lima. Perdió de local 1:2 y venció por 0:1 en Lima. Dado que ambos equipos igualaron en el resultado global, se jugó un tercer partido para definir al campeón de la temporada. Este encuentro culminó 0:0 luego de 120 minutos de juego, por lo que el campeonato se definió en la tanda de penales donde Juan Aurich ganó 1:3. El año 2012 fue especial, ya que la Asociación Deportiva de Fútbol Profesional celebraba su centenario. El 2 de marzo, la Universidad de San Martín de Porres, debido a la huelga de futbolistas, anunció su retiro definitivo del fútbol profesional y del torneo local,
+
+ para después confirmarlo. Sin embargo, el 14 de marzo, después de una asamblea, el club regresó al fútbol profesional con doce votos a favor y dos en contra.
+En el
+Campeonato Descentralizado 2012
+, Sporting Cristal consiguió su título dieciséis luego de siete años ante el cuadro de
+Real Garcilaso
+del
+Cusco
+. En la
+temporada 2013
+, Universitario de Deportes obtuvo su vigésimo sexto título nacional tras vencer a Real Garcilaso por 5:4 en
+tanda de penales
+en un tercer y definitorio partido disputado en el
+Estadio Huancayo
+. En
+2014
+Sporting Cristal fue el campeón tras vencer a Juan Aurich en la final jugada en la ciudad de
+Trujillo
+. Para el año
+2015
+, en el año de su centenario, F. B. C. Melgar se coronó campeón nacional por segunda vez en su historia y logró el tercer campeonato para un club provinciano llegando a la definición gracias a la obtención del
+Torneo Clausura
+donde venció a Real Garcilaso en un partido extra jugado en el
+Callao
+. Dos semanas después volvió a dejar en carrera al conjunto cuzqueño en semifinales para finalmente vencer en la final a Sporting Cristal en el partido de vuelta disputado en el
+Estadio Monumental de la UNSA
+. Además se convirtió en el primer equipo no limeño en dar la vuelta en su ciudad de origen.
+2026-03-13 17:17:28,517 - INFO - *2 - id:39c4c8c5-8925-46f4-8a05-499c99f34b41 - Documento:
+Lima Cricket
+fue el primer campeón de la
+Liga Peruana de Fútbol
+, mientras que el Association F. B. C. finalizó en la segunda posición.
+
+ La primera edición del campeonato fue un éxito a pesar de algunos contratiempos menores. La
+Escuela Militar de Chorrillos
+se retiró del torneo en la mitad de la temporada después de solo haber obtenido un punto.
+
+En la segunda edición del torneo Sport Jorge Chávez se alzó con el título y al año siguiente, Lima Cricket consiguió su segundo campeonato.
+Sport José Gálvez
+que se había rehusado a participar en
+1912
+,
+
+ ganó dos torneos consecutivos en
+1915
+y
+1916
+, convirtiéndose en el primer bicampeón del fútbol peruano. En
+1917
+el campeón fue el
+Sport Juan Bielovucic
+. Sport Alianza logró su primer bicampeonato al obtener los títulos de
+1918
+y
+1919
+. Entretanto Sport Inca y Sport Progreso ganaron los campeonatos de
+1920
+y
+1921
+respectivamente. Durante estos años, los campeones recibían el Escudo Dewar, donación del escocés
+Thomas Dewar
+, como trofeo. La liga se disputó ininterrumpidamente durante diez temporadas hasta que se disolvió temporalmente. Discrepancias respecto a la organización causaron que entre 1922 y 1925 no se llevara a cabo el torneo.
+
+2026-03-13 17:17:28,517 - INFO - *3 - id:b913d52c-2f83-4aba-8bba-e6b9c4c80d86 - Documento:
+2006
+
+,
+
+2007
+
+,
+
+2008
+
+,
+
+2009
+
+,
+
+2010
+
+,
+
+2011
+
+,
+
+2012
+
+,
+
+2013
+
+,
+
+2014
+
+,
+
+2015
+
+,
+
+2020
+
+,
+
+2021
+
+,
+
+2022
+
+,
+
+2023
+
+,
+
+2024
+
+,
+8., Tít. = 0. 8., Sub. = 3. 8., Asc. = 3. 8., Desc. = 2. 9., Club = <!-- image -->
+
+Juan Aurich. 9., Temp. = 35. 9., Temporadas Totales = 1967
+
+,
+
+1968
+
+,
+
+1969
+
+,
+
+1970
+
+,
+
+1971
+
+,
+
+1972
+
+,
+
+1973
+
+,
+
+1974
+
+,
+
+1975
+
+,
+
+1976
+
+,
+
+1977
+
+,
+
+1978
+
+,
+
+1979
+
+,
+
+1980
+
+,
+
+1981
+
+,
+
+1982
+
+,
+
+1983
+
+,
+
+1988
+
+,
+
+1989
+
+,
+
+1991
+
+,
+
+1998
+
+,
+
+1999
+
+,
+
+2000
+
+,
+
+2001
+
+,
+
+2002
+
+,
+2026-03-13 17:17:29,357 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:29,439 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-03-13 17:17:29,526 - INFO - HTTP Request: POST https://3e2d408c-9df9-477a-94d0-caddae08d730.us-east-1-1.aws.cloud.qdrant.io:6333/collections/futbol-peruano-hybrid-doc-chunks/points/query "HTTP/1.1 200 OK"
+2026-03-13 17:17:29,526 - INFO - *1 - id:35d75105-af0f-415a-abda-0c640cbdf82c - Documento:
+ = Copa Federación
+
+. 2012, Campeón.Copa de Campeones del Perú
+
+ = <!-- image -->
+
+José Gálvez. 2012, Resultado.Copa de Campeones del Perú
+
+ = 1 - 0. 2012, Subcampeón.Copa de Campeones del Perú
+
+ = Bandera del departamento de Ica
+
+<!-- image -->
+
+Juan Aurich. 2012, Final.Copa de Campeones del Perú
+
+ = Chimbote. 2012, Categorías.Copa de Campeones del Perú
+
+ = Primera División
+
+Segunda División. Supercopa Peruana
+
+, Campeón.Copa de Campeones del Perú
+
+ = Supercopa Peruana
+
+. Supercopa Peruana
+
+, Resultado.Copa de Campeones del Perú
+
+ = Supercopa Peruana
+
+. Supercopa Peruana
+
+, Subcampeón.Copa de Campeones del Perú
+
+ = Supercopa Peruana
+
+. Supercopa Peruana
+
+, Final.Copa de Campeones del Perú
+
+ = Supercopa Peruana
+
+. Supercopa Peruana
+2026-03-13 17:17:29,526 - INFO - *2 - id:d68ed3d6-6756-47ec-8a40-fca5a7444ad9 - Documento:
+↑ República, La (24 de mayo de 2019). [«Copa Bicentenario: Así quedaron los grupos del nuevo torneo peruano [FOTOS]»](https://larepublica.pe/deportes/1474945-copa-bicentenario-2019-quedaron-grupos-nuevo-torneo-peruano-liga-1-movistar-liga-2-futbol-peruano-alianza-lima-universitario-sporting-cristal) . larepublica.pe . Consultado el 30 de agosto de 2024 .
+↑ a b LR, Deportes (11 de mayo de 2020). «Copa Bicentenario suspendida: ¿Qué pasará con el cupo a la Sudamericana?» . larepublica.pe . Consultado el 27 de diciembre de 2023 .
+↑ Líbero (8 de agosto de 2022). «FPF no realizará la Copa Bicentenario ni el Alianza vs. Cristal por la Supercopa Peruana» . Consultado el 14 de agosto de 2022 .
+↑ Depor (14 de febrero de 2025). «Se cancela: Copa de la Liga Peruana no va más por decisión de la FPF» . Depor . Consultado el 14 de febrero de 2025 . « La decisión fue motivada por la empresa que tiene los derechos televisivos de la Liga1, 1190 Sports ».
+↑ Club Alianza Lima (2001). El Comercio, ed. «Copa Campeones del Perú 1919» .
+↑ «En el 2012 se jugará Copa Federación» . Perú 21 . 2011. Archivado desde el original el 1 de enero de 2012 . Consultado el 8 de enero de 2012 .
+2026-03-13 17:17:29,526 - INFO - *3 - id:d4fffd3a-33e6-461b-a03e-1121d6fab004 - Documento:
+Campeones de la (1912-)
+
+Copa Libertadores
+
+Van a la del siguiente año (1960-)
+
+Copa Sudamericana
+
+Van a la del siguiente año (2003 - act. Pero mismo año en 2002 y 2003) (2002-)
+
+Segunda División
+
+En (2D) (1912-)
+
+Tercera División
+
+En (3D) (2025-)
+
+Copa Perú
+
+En la (CP) (1967-)
+
+Ninguna Liga (NL) (1912-), CRI = Liga
+
+Campeones de la (1912-)
+
+Copa Libertadores
+
+Van a la del siguiente año (1960-)
+
+Copa Sudamericana
+
+Van a la del siguiente año (2003 - act. Pero mismo año en 2002 y 2003) (2002-)
+
+Segunda División
+
+En (2D) (1912-)
+
+Tercera División
+
+En (3D) (2025-)
+
+Copa Perú
+
+En la (CP) (1967-)
+
+Ninguna Liga (NL) (1912-). Liga
+
+Campeones de la (1912-)
+
+Copa Libertadores
+
+Van a la del siguiente año (1960-)
+
+Copa Sudamericana
+
+Van a la del siguiente año (2003 - act. Pero mismo año en 2002 y 2003) (2002-)
+
+Segunda División
+
+En (2D) (1912-)
+
+Tercera División
+
+En (3D) (2025-)
+
+Copa Perú
+
+En la (CP) (1967-)
+
+Ninguna Liga (NL) (1912-), ALI = Liga
+
+Campeones de la (1912-)
+
+Copa Libertadores
+
+Van a la del siguiente año (1960-)
+
+Copa Sudamericana
+
+Van a la del siguiente año (2003 - act. Pero mismo año en 2002 y 2003) (2002-)
+
+Segunda División
+
+En (2D) (1912-)
+
+Tercera División
+
+En (3D) (2025-)
+
+Copa Perú
+
+En la (CP) (1967-)
+2026-03-13 17:17:30,888 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:30,981 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-03-13 17:17:31,074 - INFO - HTTP Request: POST https://3e2d408c-9df9-477a-94d0-caddae08d730.us-east-1-1.aws.cloud.qdrant.io:6333/collections/futbol-peruano-hybrid-markdown-chunks/points/query "HTTP/1.1 200 OK"
+2026-03-13 17:17:31,074 - INFO - *1 - id:46956b39-24d7-4971-bccc-9a6564b21055 - Documento:
+↑ «Por derechos de TV: Copa Inca no va hasta que clubes aclaren contratos» . El Bocón . 4 de junio de 2012 . Consultado el 19 de diciembre de 2024 .
+↑ República, La (24 de mayo de 2019). [«Copa Bicentenario: Así quedaron los grupos del nuevo torneo peruano [FOTOS]»](https://larepublica.pe/deportes/1474945-copa-bicentenario-2019-quedaron-grupos-nuevo-torneo-peruano-liga-1-movistar-liga-2-futbol-peruano-alianza-lima-universitario-sporting-cristal) . larepublica.pe . Consultado el 30 de agosto de 2024 .
+↑ a b LR, Deportes (11 de mayo de 2020). «Copa Bicentenario suspendida: ¿Qué pasará con el cupo a la Sudamericana?» . larepublica.pe . Consultado el 27 de diciembre de 2023 .
+↑ Líbero (8 de agosto de 2022). «FPF no realizará la Copa Bicentenario ni el Alianza vs. Cristal por la Supercopa Peruana» . Consultado el 14 de agosto de 2022 .
+↑ Depor (14 de febrero de 2025). «Se cancela: Copa de la Liga Peruana no va más por decisión de la FPF» . Depor . Consultado el 14 de febrero de 2025 . « La decisión fue motivada por la empresa que tiene los derechos televisivos de la Liga1, 1190 Sports ».
+↑ Club Alianza Lima (2001). El Comercio, ed. «Copa Campeones del Perú 1919» .
+↑ «En el 2012 se jugará Copa Federación» . Perú 21 . 2011. Archivado desde el original el 1 de enero de 2012 . Consultado el 8 de enero de 2012 .
+↑ RedacciónRPP (23 de enero de 2020). «Atlético Grau goleó 3-0 a Binacional y se consagró campeón de la Supercopa del fútbol peruano | RPP Noticias» . rpp.pe . Consultado el 30 de julio de 2024 .
+↑ RPP, ed. (2022). «FPF anunció que no se jugará la Copa Bicentenario y Supercopa 2022» . Consultado el 3 de enero de 2022 . «También quedó sin efecto la Supercopa 2022, que se iba a disputar entre Alianza Lima (campeón nacional 2021) y Sporting Cristal (campeón de la Copa Bicentenario).»
+↑ TROME.COM, NOTICIAS (24 de agosto de 2022). «Alianza Lima quería, Sporting Cristal no ¿Qué pasó con la cancelada Supercopa? | Liga 1 Reformas FPF Copa Bicentenario | DEPORTES» . Trome.com . Consultado el 27 de diciembre de 2023 .
+2026-03-13 17:17:31,074 - INFO - *2 - id:ff096acd-9cd4-4687-bd14-5450984967ba - Documento:
+{
+  "titulo_tabla": "Copas/Copa Bicentenario",
+  "datos_tabla": {
+    "0": {
+      "Edición": "2019",
+      "Campeón": "Bandera de Piura Atlético Grau",
+      "Resultado": "0 - 0 ( pró. ) (4-3 pen. )",
+      "Subcampeón": "Bandera del departamento de Junín Sport Huancayo",
+      "Final": "Callao",
+      "Categorías": "Primera División Segunda División"
+    },
+    "1": {
+      "Edición": "2020",
+      "Campeón": "pandemia de COVID-19 Suspendida por la"
+    },
+    "2": {
+      "Edición": "2021",
+      "Campeón": "Bandera de Lima Sporting Cristal",
+      "Resultado": "2 - 1",
+      "Subcampeón": "Bandera del departamento de La Libertad (Perú) Carlos Mannucci",
+      "Final": "Lima",
+      "Categorías": "Primera División Segunda División"
+    },
+    "3": {
+      "Edición": "2022",
+      "Campeón": "Federación Peruana de Fútbol Cancelada por decisión de la ."
+    }
+  }
+}
+2026-03-13 17:17:31,074 - INFO - *3 - id:4520b520-ccfb-4f04-813e-ad82eb4b5ca4 - Documento:
+ [editar ]
+↑ a b Panfichi, Aldo; Vila, Gisselle; Chávez, Noelia; Saravia, Sergio (4 de marzo de 2020). El otro partido: La disputa por el gobierno del fútbol peruano . Fondo Editorial de la PUCP. ISBN 978-612-317-383-8 . Consultado el 29 de mayo de 2024 .
+↑ Asociación Deportiva de Fútbol Profesional (1912). «Fundación - Asociación Deportiva de Fútbol Profesional» . Archivado desde el original el 29 de enero de 2023. « La Asociación Deportiva de Fútbol Profesional fue fundada oficialmente el 12 de mayo de 1912 con el nombre de "Liga Peruana de Football" ».
+↑ Asociación Deportiva de Fútbol Profesional (28 de febrero de 2011). «Historia de la Asociación Deportiva de Fútbol Profesional» . Archivado desde el original el 28 de febrero de 2011. « La Asociación Deportiva de Fútbol Profesional es la sucesora de la Liga Peruana de Fútbol, fundada el 12 de mayo de 1912, de la Asociación No Amateur, de la Asociación Central, de la Asociación Nacional y de la Asociación Peruana de Fútbol, instituciones todas que, en su momento, tuvieron la responsabilidad de regir el fútbol de los clubes integrantes de la Primera División ».
+↑ a b «Bases del Descentralizado 2014» . Asociación Deportiva de Fútbol Profesional . Consultado el 5 de mayo de 2024 . « Para el Campeonato 2014, la ADFP organizará dos Torneos, ellos son Torneo del Inca y Torneo Descentralizado ».
+↑ «Bases Descentralizado 2015» . Asociación Deportiva de Fútbol Profesional . Consultado el 30 de agosto de 2024 .
+↑ RedacciónRPP (8 de junio de 2018). «La FPF creará la Liga de Fútbol Profesional a partir del 2019 | RPP Noticias» . rpp.pe . Consultado el 27 de diciembre de 2023 .
+↑ «Atlético Grau goleó 3-0 a Binacional y es el campeón de la Supercopa Peruana 2020» . Diario Líbero . 23 de enero de 2020 . Consultado el 14 de febrero de 2025 .
+↑ «Reglamento 2024 FPF» .
+↑ Hernandez, Carlos (2 de enero de 2024). «¿En qué beneficiará la Copa Bicentenario 2024?» . Diario Líbero . Consultado el 14 de febrero de 2025 .
+↑ Luna, Robert (2 de mayo de 2024). «¿Se jugará la Copa Bicentenario 2024?» . Futbolperuano . Consultado el 14 de febrero de 2025 .
+↑ Rey, Gabriel (26 de mayo de 2024). «¿Habrá Copa Bicentenario en el 2024?» . Futbolperuano . Consultado el 14 de febrero de 2025 . « La Copa Bicentenario fue creada con la intención de suplantar a la Copa del Inca, la cual se llevó a cabo en las temporadas 2011, 2014 y 2015, tienen como campeones a José Gálvez, Alianza Lima y César Vallejo respectivamente. El torneo se dejó de jugar los tres años siguientes, volviendo con el nuevo nombre, 'Copa Bicentenario'. ».
+2026-03-13 17:17:32,373 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:32,487 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-03-13 17:17:32,580 - INFO - HTTP Request: POST https://3e2d408c-9df9-477a-94d0-caddae08d730.us-east-1-1.aws.cloud.qdrant.io:6333/collections/futbol-peruano-hybrid-markdown-chunks/points/query "HTTP/1.1 200 OK"
+2026-03-13 17:17:32,580 - INFO - *1 - id:ad4ace1c-f238-4045-af98-a0aaa0ba5006 - Documento:
+Los equipos que finalizaron en el primer lugar de cada serie fueron Universidad de San Martín y León de Huánuco que clasificaron a la fase de grupos de la Copa Libertadores 2011 y disputaron el título nacional en encuentros de ida y vuelta. Universidad de San Martín volvió a consagrarse como campeón, tras derrotar en la final a León de Huánuco. De la mano del entrenador Aníbal Ruiz , empató en Huánuco 1:1 y venció por 2:1 en Lima . En la temporada 2011 el torneo se llevó a cabo en dos etapas: en la primera, los equipos jugaron dos ruedas en la modalidad de todos contra todos con partidos de ida y vuelta, lo que cual dio un total de treinta fechas. En la segunda etapa, los dos mejores equipos al cabo de las treinta fechas disputaron el título nacional en una final con partidos de ida y vuelta.
+
+Juan Aurich se consagró como campeón por primera vez en su historia, tras derrotar en la final a Alianza Lima. Perdió de local 1:2 y venció por 0:1 en Lima. Dado que ambos equipos igualaron en el resultado global, se jugó un tercer partido para definir al campeón de la temporada. Este encuentro culminó 0:0 luego de 120 minutos de juego, por lo que el campeonato se definió en la tanda de penales donde Juan Aurich ganó 1:3. El año 2012 fue especial, ya que la Asociación Deportiva de Fútbol Profesional celebraba su centenario. El 2 de marzo, la Universidad de San Martín de Porres, debido a la huelga de futbolistas, anunció su retiro definitivo del fútbol profesional y del torneo local,  para después confirmarlo. Sin embargo, el 14 de marzo, después de una asamblea, el club regresó al fútbol profesional con doce votos a favor y dos en contra.
+
+En el Campeonato Descentralizado 2012 , Sporting Cristal consiguió su título dieciséis luego de siete años ante el cuadro de Real Garcilaso del Cusco . En la temporada 2013 , Universitario de Deportes obtuvo su vigésimo sexto título nacional tras vencer a Real Garcilaso por 5:4 en tanda de penales en un tercer y definitorio partido disputado en el Estadio Huancayo . En 2014 Sporting Cristal fue el campeón tras vencer a Juan Aurich en la final jugada en la ciudad de Trujillo . Para el año 2015 , en el año de su centenario, F. B. C. Melgar se coronó campeón nacional por segunda vez en su historia y logró el tercer campeonato para un club provinciano llegando a la definición gracias a la obtención del Torneo Clausura donde venció a Real Garcilaso en un partido extra jugado en el Callao . Dos semanas después volvió a dejar en carrera al conjunto cuzqueño en semifinales para finalmente vencer en la final a Sporting Cristal en el partido de vuelta disputado en el Estadio Monumental de la UNSA . Además se convirtió en el primer equipo no limeño en dar la vuelta en su ciudad de origen.
+
+Equipos
+
+ [editar ]
+
+Equipos participantes 2026
+
+ [editar ]
+2026-03-13 17:17:32,580 - INFO - *2 - id:cb2ccb36-2f60-476d-a239-62876794d8ca - Documento:
+{
+  "titulo_tabla": "Era amateur/Liga Peruana de Football (Escudo Dewar)",
+  "datos_tabla": {
+    "0": {
+      "Ed.": "1",
+      "Año": "1912",
+      "Campeón": "Lima Cricket F. B. C.",
+      "Subcampeón": "Association F. C."
+    },
+    "1": {
+      "Ed.": "2",
+      "Año": "1913",
+      "Campeón": "Jorge Chávez Nr. 1",
+      "Subcampeón": "Lima Cricket F. B. C."
+    },
+    "2": {
+      "Ed.": "3",
+      "Año": "1914",
+      "Campeón": "Lima Cricket F. B. C.",
+      "Subcampeón": "Sport Alianza"
+    },
+    "3": {
+      "Ed.": "4",
+      "Año": "1915",
+      "Campeón": "Sport José Gálvez",
+      "Subcampeón": "Atlético Peruano"
+    },
+    "4": {
+      "Ed.": "5",
+      "Año": "1916",
+      "Campeón": "Sport José Gálvez",
+      "Subcampeón": "Jorge Chávez Nr. 1"
+    },
+    "5": {
+      "Ed.": "6",
+      "Año": "1917",
+      "Campeón": "Sport Juan Bielovucic",
+      "Subcampeón": "Sport Alianza"
+    },
+    "6": {
+      "Ed.": "7",
+      "Año": "1918",
+      "Campeón": "Sport Alianza",
+      "Subcampeón": "Jorge Chávez Nr. 2"
+    },
+    "7": {
+      "Ed.": "8",
+      "Año": "1919",
+      "Campeón": "Sport Alianza",
+      "Subcampeón": "Sport Sáenz Peña"
+    },
+    "8": {
+      "Ed.": "9",
+      "Año": "1920",
+      "Campeón": "Sport Inca",
+      "Subcampeón": "Sport Progreso"
+    },
+    "9": {
+      "Ed.": "10",
+      "Año": "1921",
+      "Campeón": "Sport Progreso",
+      "Subcampeón": "Jorge Chávez Nr. 2"
+    },
+    "10": {
+      "Ed.": "-",
+      "Año": "1922-1925",
+      "Campeón": "No hubo campeonato por desacuerdo entre clubes"
+    }
+  }
+}
+2026-03-13 17:17:32,580 - INFO - *3 - id:b376262b-5900-455e-838a-7328f3dc73da - Documento:
+En la segunda edición del torneo Sport Jorge Chávez se alzó con el título y al año siguiente, Lima Cricket consiguió su segundo campeonato. Sport José Gálvez que se había rehusado a participar en 1912 ,  ganó dos torneos consecutivos en 1915 y 1916 , convirtiéndose en el primer bicampeón del fútbol peruano. En 1917 el campeón fue el Sport Juan Bielovucic . Sport Alianza logró su primer bicampeonato al obtener los títulos de 1918 y 1919 . Entretanto Sport Inca y Sport Progreso ganaron los campeonatos de 1920 y 1921 respectivamente. Durante estos años, los campeones recibían el Escudo Dewar, donación del escocés Thomas Dewar , como trofeo. La liga se disputó ininterrumpidamente durante diez temporadas hasta que se disolvió temporalmente. Discrepancias respecto a la organización causaron que entre 1922 y 1925 no se llevara a cabo el torneo. 
+
+Creación de la Federación Peruana de Fútbol
+
+ [editar ]
+
+Teodoro Fernández Meyzán (derecha), siete veces máximo goleador del Campeonato Peruano.
+
+Segundo Castillo , ganador de cuatro campeonatos.
+
+Debido a las diferencias entre los clubes miembros que conformaban la Liga Peruana de Fútbol , en 1922 se fundó la Federación Peruana de Fútbol como sucesora y con el objetivo de integrar a todas las bases y organizaciones.   Desde 1926, se comenzaron a jugar nuevamente los torneos con la adición de los equipos de la Liga del Callao .  Se realizaron dos campeonatos auspiciados por la FPF en los años 1926 y 1927 , sin embargo no se desarrollaron con total normalidad.  El torneo de 1926 contó con la participación de once equipos, no obstante algunos de ellos se retiraron de la liga a mitad de la temporada. El ganador fue el Sport Progreso al obtener cuatro victorias y dos empates.  En 1927, el número de equipos disminuyó a ocho y al igual que en la campaña anterior no se disputó completamente. Alianza Lima quedó en primer lugar y alcanzó su tercer título después de ganar tres partidos de siete por disputar. 
+
+En 1928 la Federación Peruana de Fútbol organiza su tercer torneo oficial y el primero en concluir completamente, aumentó el número de equipos a diecinueve y los separó en dos grupos, de los cuales avanzaron cinco equipos al grupo final del cual salía el campeón de la liga.    En la segunda etapa del campeonato Alianza Lima enfrentó a la Federación Universitaria (hoy conocido como Universitario de Deportes ),  que fue invitada por la Federación Peruana de Fútbol . El encuentro finalizó con victoria por 1:0 para los universitarios y comenzó así la mayor rivalidad en la historia del fútbol peruano. 
+
+Al final de la segunda etapa ambos clubes empataron en el primer lugar, motivo por el cual se jugaron dos partidos extras para declarar el campeón de 1928. El primer partido terminó con empate 1:1 y el segundo con victoria por 2:0 de Alianza Lima.  Tras un segundo puesto en su debut en primera división, la Federación Universitaria consiguió su primer título en 1929 . Para el campeonato de 1930 , la Federación experimentó con un nuevo formato. Se separaron los equipos en tres grupos de cuatro equipos. El ganador de cada grupo avanzaba al grupo final para definir el campeón de la temporada. Los tres finalistas fueron Atlético Chalaco , Alianza Lima y la Federación Universitaria. El ganador del torneo fue Atlético Chalaco al vencer por marcador de 2:1 en sus dos encuentros, convirtiéndose así en el primer equipo originario de la provincia del Callao en obtener el título. 
+2026-03-13 17:17:35,868 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:36,099 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-03-13 17:17:36,193 - INFO - HTTP Request: POST https://3e2d408c-9df9-477a-94d0-caddae08d730.us-east-1-1.aws.cloud.qdrant.io:6333/collections/futbol-peruano-hybrid-markdown-chunks/points/query "HTTP/1.1 200 OK"
+2026-03-13 17:17:36,193 - INFO - *1 - id:df74f3bf-aa01-4f5f-953d-5807e07428a2 - Documento:
+{
+  "titulo_tabla": "Supercopas/Copa Federación",
+  "datos_tabla": {
+    "0": {
+      "Edición": "2012",
+      "Campeón": "José Gálvez",
+      "Resultado": "1 - 0",
+      "Subcampeón": "Bandera del departamento de Ica Juan Aurich",
+      "Final": "Chimbote",
+      "Categorías": "Primera División Segunda División"
+    }
+  }
+}
+2026-03-13 17:17:36,193 - INFO - *2 - id:46956b39-24d7-4971-bccc-9a6564b21055 - Documento:
+↑ «Por derechos de TV: Copa Inca no va hasta que clubes aclaren contratos» . El Bocón . 4 de junio de 2012 . Consultado el 19 de diciembre de 2024 .
+↑ República, La (24 de mayo de 2019). [«Copa Bicentenario: Así quedaron los grupos del nuevo torneo peruano [FOTOS]»](https://larepublica.pe/deportes/1474945-copa-bicentenario-2019-quedaron-grupos-nuevo-torneo-peruano-liga-1-movistar-liga-2-futbol-peruano-alianza-lima-universitario-sporting-cristal) . larepublica.pe . Consultado el 30 de agosto de 2024 .
+↑ a b LR, Deportes (11 de mayo de 2020). «Copa Bicentenario suspendida: ¿Qué pasará con el cupo a la Sudamericana?» . larepublica.pe . Consultado el 27 de diciembre de 2023 .
+↑ Líbero (8 de agosto de 2022). «FPF no realizará la Copa Bicentenario ni el Alianza vs. Cristal por la Supercopa Peruana» . Consultado el 14 de agosto de 2022 .
+↑ Depor (14 de febrero de 2025). «Se cancela: Copa de la Liga Peruana no va más por decisión de la FPF» . Depor . Consultado el 14 de febrero de 2025 . « La decisión fue motivada por la empresa que tiene los derechos televisivos de la Liga1, 1190 Sports ».
+↑ Club Alianza Lima (2001). El Comercio, ed. «Copa Campeones del Perú 1919» .
+↑ «En el 2012 se jugará Copa Federación» . Perú 21 . 2011. Archivado desde el original el 1 de enero de 2012 . Consultado el 8 de enero de 2012 .
+↑ RedacciónRPP (23 de enero de 2020). «Atlético Grau goleó 3-0 a Binacional y se consagró campeón de la Supercopa del fútbol peruano | RPP Noticias» . rpp.pe . Consultado el 30 de julio de 2024 .
+↑ RPP, ed. (2022). «FPF anunció que no se jugará la Copa Bicentenario y Supercopa 2022» . Consultado el 3 de enero de 2022 . «También quedó sin efecto la Supercopa 2022, que se iba a disputar entre Alianza Lima (campeón nacional 2021) y Sporting Cristal (campeón de la Copa Bicentenario).»
+↑ TROME.COM, NOTICIAS (24 de agosto de 2022). «Alianza Lima quería, Sporting Cristal no ¿Qué pasó con la cancelada Supercopa? | Liga 1 Reformas FPF Copa Bicentenario | DEPORTES» . Trome.com . Consultado el 27 de diciembre de 2023 .
+2026-03-13 17:17:36,193 - INFO - *3 - id:4335e87c-aa8c-4d62-847f-ec5615fc094d - Documento:
+A pesar de los resultados adversos, el Perú campeonó en la Copa Oro de la Concacaf (2000) y en la Copa Kirin de 2005. En 2007, la Selección Sub-17 logró clasificarse a los cuartos de final, tras vencer a Bolivia y Brasil . Finalmente ocuparon la cuarta posición del campeonato.
+
+En 2011, el Perú ganó una vez más la Copa Kirin y obtuvo el tercer lugar en la Copa América 2011 .  A principios de 2015, el empresario Edwin Oviedo fue nombrado presidente de FPF, sucediendo a Manuel Burga, quien dos años más tarde enfrentaba cargos de extorsión, fraude electrónico y lavado de dinero en un juicio por corrupción en los Estados Unidos .   El nuevo liderazgo de la FPF designó al argentino Ricardo Gareca como entrenador de la selección peruana en marzo de 2015. Después de dirigir a la selección en un tercer lugar en la Copa América 2015 y en los cuartos de final de la Copa América Centenario , Gareca consiguió clasificar al Perú para la Copa Mundial Rusia 2018 luego de 36 años.  Perú fue ubicado en el grupo C, con las selecciones de Francia, Australia y Dinamarca. Perú perdió por 1-0 ante la selección de Dinamarca, tras un fallido penal de Christian Cueva, y luego cayó derrotado por 1-0 frente a la selección de Francia. Sin embargo, logró revitalizarse y ganó por 2-0 a la selección de Australia, con goles de André Carrillo y Paolo Guerrero, sin embargo, a pesar del triunfo ante Australia, consumó su eliminación del mundial de Rusia.
+
+En 2019, la selección participó en la Copa América Brasil 2019, derrotando en los penales a Uruguay por 5-4, y venciendo a Chile por 3-0, clasificando después de 44 años a una final de un torneo de fútbol sudamericano. Sin embargo, en la final de la Copa América, Perú cayó ante Brasil por 3-1, resultando subcampeones del torneo, y Paolo Guerrero fue elegido el mejor goleador de la Copa América.
+
+En 2026, Tupay informó de que el fútbol representaba el 80 % del volumen de apuestas deportivas durante al menos tres meses. 
+
+Fútbol de clubes
+
+ [editar ]
+
+Artículo principal: Anexo:Clubes de fútbol del Perú
+
+Competiciones nacionales de clubes
+
+ [editar ]
+
+Fundación del Club Alianza Lima (1901).
+
+Los campeonatos nacionales de fútbol son organizados por la Federación Peruana de Fútbol (FPF), afiliada desde 1925 a la Confederación Sudamericana de Fútbol (CONMEBOL).
+
+Primera División
+
+ [editar ]
+
+Artículo principal: Primera División del Perú
+
+Entre 1912 y 1921 , se jugó la Liga Peruana de Fútbol , conformada por equipos limeños y chalacos. En 1926 y 1927 se realizaron sendos campeonatos auspiciados por la Federación, los cuales no se desarrollaron en su totalidad de partidos y se declararon los campeones según la tabla de posiciones vigente.    En 1928 la Federación Peruana de Fútbol organiza el primer torneo que se desarrolló completamente en el fútbol peruano,  pero no sería sino hasta 1951 cuando el campeonato se adecuó a los lineamientos mundiales, sin embargo, en esta oportunidad tampoco participaron los clubes de provincia (con excepción del Callao ). La marcha del certamen estuvo organizada por la Asociación Central de Fútbol (ACF). 
+2026-03-13 17:17:36,815 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:37,924 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:38,612 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:38,616 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:38,617 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:38,617 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:38,617 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:38,617 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:38,617 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:38,620 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:38,623 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:44,672 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:44,688 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:44,688 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:46,067 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:46,067 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:46,745 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:48,098 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:48,804 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:48,804 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:48,804 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:51,235 - ERROR - Exception raised in Job[4]: LLMDidNotFinishException(The LLM generation was not completed. Please increase the max_tokens and try again.)
+2026-03-13 17:17:51,235 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:53,640 - INFO - Retrying request to /openai/v1/chat/completions in 0.447250 seconds
+2026-03-13 17:17:53,649 - INFO - Retrying request to /openai/v1/chat/completions in 0.460620 seconds
+2026-03-13 17:17:53,649 - INFO - Retrying request to /openai/v1/chat/completions in 0.480239 seconds
+2026-03-13 17:17:53,649 - INFO - Retrying request to /openai/v1/chat/completions in 0.462263 seconds
+2026-03-13 17:17:53,649 - INFO - Retrying request to /openai/v1/chat/completions in 0.421060 seconds
+2026-03-13 17:17:54,061 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:54,741 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:54,741 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:54,741 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:56,799 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:56,799 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:56,799 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:56,799 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:56,799 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:56,815 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:17:56,815 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:18:01,550 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:18:01,550 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:18:02,911 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:18:02,911 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:18:02,912 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:18:03,582 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:18:03,582 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:18:04,944 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 17:18:06,320 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"

@@ -1,0 +1,19 @@
+2026-03-24 16:33:16,862 - INFO - detected formats: [<InputFormat.HTML: 'html'>]
+2026-03-24 16:33:17,076 - INFO - Going to convert document batch...
+2026-03-24 16:33:17,076 - INFO - Initializing pipeline for SimplePipeline with options hash 35a8e94b10f7fb06f9f42c09d469bf86
+2026-03-24 16:33:17,095 - INFO - Loading plugin 'docling_defaults'
+2026-03-24 16:33:17,095 - INFO - Registered picture descriptions: ['picture_description_vlm_engine', 'vlm', 'api']
+2026-03-24 16:33:17,095 - INFO - Processing document F%C3%BAtbol_en_el_Per%C3%BA
+2026-03-24 16:33:17,149 - WARNING - Clashing hyperlinks: '\wiki\Lima' and '\wiki\Estadio_Nacional_del_Per%C3%BA'! Chose '\wiki\Estadio_Nacional_del_Per%C3%BA'
+2026-03-24 16:33:17,149 - WARNING - Clashing hyperlinks: '\wiki\Per%C3%BA' and '\wiki\Estadio_Monumental_(Per%C3%BA)'! Chose '\wiki\Estadio_Monumental_(Per%C3%BA)'
+2026-03-24 16:33:17,149 - WARNING - Clashing hyperlinks: '\wiki\Marino' and '\wiki\Puerto_del_Callao'! Chose '\wiki\Puerto_del_Callao'
+2026-03-24 16:33:17,149 - WARNING - Clashing hyperlinks: '\wiki\Selecci%C3%B3n_de_f%C3%BAtbol_de_Austria' and '\wiki\Juan_Valdivieso'! Chose '\wiki\Juan_Valdivieso'
+2026-03-24 16:33:17,149 - WARNING - Clashing hyperlinks: '\wiki\Selecci%C3%B3n_de_f%C3%BAtbol_de_Per%C3%BA' and '\wiki\Juan_Valdivieso'! Chose '\wiki\Juan_Valdivieso'
+2026-03-24 16:33:17,165 - WARNING - Clashing hyperlinks: '\wiki\Primera_Divisi%C3%B3n_del_Per%C3%BA' and '\wiki\Lolo_Fern%C3%A1ndez'! Chose '\wiki\Lolo_Fern%C3%A1ndez'
+2026-03-24 16:33:17,165 - WARNING - Clashing hyperlinks: '\wiki\Ra%C3%BAl_Toro_Julio' and '\wiki\Lolo_Fern%C3%A1ndez'! Chose '\wiki\Lolo_Fern%C3%A1ndez'
+2026-03-24 16:33:17,165 - WARNING - Clashing hyperlinks: '\wiki\Te%C3%B3filo_Cubillas' and '\wiki\Hugo_Sotil'! Chose '\wiki\Hugo_Sotil'
+2026-03-24 16:33:17,165 - WARNING - Clashing hyperlinks: '\wiki\Roberto_Chale' and '\wiki\Hugo_Sotil'! Chose '\wiki\Hugo_Sotil'
+2026-03-24 16:33:17,260 - WARNING - Clashing hyperlinks: '\wiki\Jefferson_Farf%C3%A1n' and '\wiki\Paolo_Guerrero'! Chose '\wiki\Paolo_Guerrero'
+2026-03-24 16:33:17,260 - WARNING - Clashing hyperlinks: '\wiki\Mundial_Rusia_2018' and '\wiki\Paolo_Guerrero'! Chose '\wiki\Paolo_Guerrero'
+2026-03-24 16:33:17,300 - INFO - Finished converting document F%C3%BAtbol_en_el_Per%C3%BA in 1.62 sec.
+2026-03-24 16:33:17,540 - INFO - Se cargaron 37 documentos desde https://es.wikipedia.org/wiki/F%C3%BAtbol_en_el_Per%C3%BA
