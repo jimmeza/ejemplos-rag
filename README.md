@@ -10,7 +10,7 @@ Archivos JSON con los flujos de trabajo de ejemplo en [LangFlow](https://github.
 ---
 
 ## Ejemplos de Mejoras para RAG
-Estos ejemplos están basados en el artículo "[De respuestas mediocres a precisas: Mejorando la recuperación de tu RAG en tu base de conocimiento IA](https://www.linkedin.com/pulse//)"
+Estos ejemplos están basados en el artículo "[De respuestas mediocres a precisas: Mejorando la recuperación de tu RAG en tu base de conocimiento IA](https://www.linkedin.com/pulse/de-respuestas-mediocres-precisas-mejorando-la-tu-rag-en-jim-meza-ptwpe)"
 
 Los módulos core están en la carpeta [rag_helper](https://github.com/jimmeza/ejemplos-rag/tree/main/rag_helper), algunos tienen la función main() con código de prueba de su mismo módulo.
 
@@ -62,5 +62,5 @@ llm = init_chat_model(model="local",
 
 Tambíen se debe preparar el archivo **.env** en base al archivo **.env.example** con sus respectivas API Keys.
 
-Para los demás requisitos se debe revisar el artículo "[De respuestas mediocres a precisas: Mejorando la recuperación de tu RAG en tu base de conocimiento IA](https://www.linkedin.com/pulse//)".
+Para los demás requisitos se debe revisar el artículo "[De respuestas mediocres a precisas: Mejorando la recuperación de tu RAG en tu base de conocimiento IA](https://www.linkedin.com/pulse/de-respuestas-mediocres-precisas-mejorando-la-tu-rag-en-jim-meza-ptwpe)".
 
