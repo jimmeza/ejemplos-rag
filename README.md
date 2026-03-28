@@ -5,16 +5,16 @@
 ## Ejemplo NO Code
 Estos ejemplos están basados en el artículo "[¿Pierdes Tiempo Buscando en tus Documentos o Webs? Tal Vez Necesitas una Base de Conocimiento IA (y Saber Cómo Crear una)](https://www.linkedin.com/pulse/pierdes-tiempo-buscando-en-tus-documentos-o-webs-tal-vez-jim-meza-bmrce/)"
 
-Archivos JSON con los flujos de trabajo de ejemplo en [LangFlow](https://github.com/jimmeza/ejemplos-rag/tree/main/LangFlow)
+Archivos JSON con los flujos de trabajo de ejemplo en [LangFlow](https://github.com/jimmeza/ejemplos-rag/tree/master/LangFlow)
 
 ---
 
 ## Ejemplos de Mejoras para RAG
 Estos ejemplos están basados en el artículo "[De respuestas mediocres a precisas: Mejorando la recuperación de tu RAG en tu base de conocimiento IA](https://www.linkedin.com/pulse/de-respuestas-mediocres-precisas-mejorando-la-tu-rag-en-jim-meza-ptwpe)"
 
-Los módulos core están en la carpeta [rag_helper](https://github.com/jimmeza/ejemplos-rag/tree/main/rag_helper), algunos tienen la función main() con código de prueba de su mismo módulo.
+Los módulos core están en la carpeta [rag_helper](https://github.com/jimmeza/ejemplos-rag/tree/master/rag_helper), algunos tienen la función main() con código de prueba de su mismo módulo.
 
-Los módulos de los ejemplos están en la carpeta [ejemplos](https://github.com/jimmeza/ejemplos-rag/tree/main/ejemplos), al ejecutarlos dejan un archivo .log en la carpeta logs y se deben ejecutar como módulos de python (con el argumento -m y la ruta 'paquete'.'modulo'), por ejemplo para ejecutar el primer ejemplo del archivo '01_rag_embeddings_diferentes.py', se debe ejecutar desde la raiz del proyecto el comando:
+Los módulos de los ejemplos están en la carpeta [ejemplos](https://github.com/jimmeza/ejemplos-rag/tree/master/ejemplos), al ejecutarlos dejan un archivo .log en la carpeta logs y se deben ejecutar como módulos de python (con el argumento -m y la ruta 'paquete'.'modulo'), por ejemplo para ejecutar el primer ejemplo del archivo '01_rag_embeddings_diferentes.py', se debe ejecutar desde la raiz del proyecto el comando:
 
 ```
 py -m ejemplos.01_rag_embeddings_diferentes
