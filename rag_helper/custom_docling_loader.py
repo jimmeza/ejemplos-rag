@@ -8,10 +8,12 @@
 """Docling LangChain loader module."""
 
 import json
+import os
 import re
 from abc import ABC, abstractmethod
 from enum import Enum
 from typing import Any, Dict, Iterable, Iterator, Literal, Optional, Union
+from dotenv import load_dotenv
 
 import semchunk
 from docling.chunking import BaseChunk, BaseChunker, HybridChunker
@@ -32,6 +34,9 @@ from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveJsonSplitter
 from transformers import AutoTokenizer
 
+load_dotenv(override=True)
+Environment = Literal['development', 'testing', 'production']
+ENVIRONMENT: Environment = os.getenv('ENVIRONMENT', 'development') 
 
 class ExportType(str, Enum):
     """Enumeration of available export types."""
@@ -554,6 +559,7 @@ class CustomDoclingLoader(BaseLoader):
             api_key_ocr_pdf_vlm: API key del VLM a usar en el conversor de PDF, debe ser una API key válida
             model_name_ocr_pdf_vlm: Nombre del modelo a usar en el conversor de PDF, debe ser un modelo válido
         """
+
         self._file_paths = (
             file_path
             if isinstance(file_path, Iterable) and not isinstance(file_path, str)
@@ -710,13 +716,13 @@ class CustomDoclingLoader(BaseLoader):
                 content = reemplazar_espacios_multiples(dl_doc.export_to_markdown(**self._md_export_kwargs))
                 segmentos = separar_texto_y_tablas(content)
 
-                #Guardar cada segmento separado en un archivo de texto
-                import os
-                ruta_archivo = "./temp/segmentos_texto.txt"
-                os.makedirs(os.path.dirname(ruta_archivo), exist_ok=True)
-                f = open(ruta_archivo, "w", encoding="utf-8")
-                ruta_archivo_json = "./temp/segmentos_json.txt"
-                fj = open(ruta_archivo_json, "w", encoding="utf-8")
+                if ENVIRONMENT != "production":
+                    #Guardar cada segmento separado en un archivo de texto
+                    ruta_archivo = "./temp/segmentos_texto.txt"
+                    os.makedirs(os.path.dirname(ruta_archivo), exist_ok=True)
+                    f = open(ruta_archivo, "w", encoding="utf-8")
+                    ruta_archivo_json = "./temp/segmentos_json.txt"
+                    fj = open(ruta_archivo_json, "w", encoding="utf-8")
 
                 #Por cada segmento crear Documentos
                 for i, (tipo, segmento, titulo) in enumerate(segmentos):
@@ -725,12 +731,13 @@ class CustomDoclingLoader(BaseLoader):
                         continue
                     segmento = markdown_to_plain_text(segmento)
 
-                    #Guarda segmentos en texto sin Markdown (excepto las tablas)
-                    f.write(f"Indice: {i}\n")
-                    f.write(f"Tipo: {tipo}\n")
-                    f.write(f"Titulo: {titulo}\n")
-                    f.write(f"Segmento: \n{segmento}\n")
-                    f.write("-"*50+"\n")
+                    if ENVIRONMENT != "production":
+                        #Guarda segmentos en texto sin Markdown (excepto las tablas)
+                        f.write(f"Indice: {i}\n")
+                        f.write(f"Tipo: {tipo}\n")
+                        f.write(f"Titulo: {titulo}\n")
+                        f.write(f"Segmento: \n{segmento}\n")
+                        f.write("-"*50+"\n")
 
                     # si es tabla, convertir a json, luego convertir todo a texto plano
                     if tipo == "tabla":
@@ -738,12 +745,13 @@ class CustomDoclingLoader(BaseLoader):
                         titulo_tabla = corregir_titulo(titulo, segmento)
                         segmento = reemplazar_tablas_md_a_json(segmento, titulo_tabla).strip()
                         
-                        #Guarda segmentos en JSON
-                        fj.write(f"Indice: {i}\n")
-                        fj.write(f"Tipo: {tipo}\n")
-                        fj.write(f"Titulo: {titulo}\n")
-                        fj.write(f"Segmento: \n{segmento}\n")
-                        fj.write("-"*50+"\n")
+                        if ENVIRONMENT != "production":
+                            #Guarda segmentos en JSON
+                            fj.write(f"Indice: {i}\n")
+                            fj.write(f"Tipo: {tipo}\n")
+                            fj.write(f"Titulo: {titulo}\n")
+                            fj.write(f"Segmento: \n{segmento}\n")
+                            fj.write("-"*50+"\n")
                         
                         #Convertir cadena json a objeto json
                         lista_json = json.loads(segmento)

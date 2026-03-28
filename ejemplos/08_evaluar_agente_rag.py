@@ -47,15 +47,20 @@ def main(args=None):
                                 reranker=None, #Sin reranker para la primera evaluación del agente RAG
                                 )
     print("Pruebas de Agente RAG sin Reranker")
-    query_rag_hybrid.evaluar_agente_rag(COLLECTION_NAME, querys, respuestas_ok, nivel_detalle="total", imprimir_respuestas="resumen")
+    query_rag_hybrid.evaluar_agente_rag(COLLECTION_NAME, querys, respuestas_ok, max_docs_recuperados=3, max_busquedas=3, 
+                                        limite_recursion=10,nivel_detalle="total", imprimir_respuestas="resumen")
     print("\n","*"*100, "\n")
     #Asignamos reranker a la clase para evaluar el mismo agente RAG pero con reranker por LLM
-    query_rag_hybrid.reranker = "llm"
-    print("Pruebas de Agente RAG usando Reranker por LLM sin filtrado por umbral de relevancia")
-    query_rag_hybrid.evaluar_agente_rag(COLLECTION_NAME, querys, respuestas_ok, nivel_detalle="total", imprimir_respuestas="resumen")
+    query_rag_hybrid.reranker = "local"
+    print("Pruebas de Agente RAG usando Reranker local sin filtrado por umbral de relevancia")
+    query_rag_hybrid.evaluar_agente_rag(COLLECTION_NAME, querys, respuestas_ok, max_docs_recuperados=3, max_busquedas=3, 
+                                        limite_recursion=10, nivel_detalle="total", imprimir_respuestas="resumen")
     print("\n","*"*100, "\n")
     print("Pruebas de Agente RAG usando Reranker por LLM y filtrado por umbral de relevancia = 0.5")
-    query_rag_hybrid.evaluar_agente_rag(COLLECTION_NAME, querys, respuestas_ok, nivel_detalle="total", umbral=0.5, imprimir_respuestas="resumen")
+    query_rag_hybrid.reranker = "llm"
+    query_rag_hybrid.llm_reranker = init_chat_model("openai/gpt-oss-20b", model_provider="groq", temperature=0.0)
+    query_rag_hybrid.evaluar_agente_rag(COLLECTION_NAME, querys, respuestas_ok, max_docs_recuperados=3, max_busquedas=3, 
+                                        limite_recursion=10, nivel_detalle="total", umbral=0.5, imprimir_respuestas="resumen")
     
 
 if __name__ == "__main__":

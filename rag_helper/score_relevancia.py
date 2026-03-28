@@ -32,7 +32,7 @@ def generar_scores_relevancia_reranker(datos: List[Tuple[str, str]], no_log: boo
     resultados = reranker.rerank(datos)
     if not no_log:
         for i, (pregunta, documento, score) in enumerate(resultados):
-            logger.info(f"Relevancia Local: {score}|  Pregunta:{pregunta[:25]}|   documento:{documento}")
+            logger.info(f"Relevancia Local: {score}|  Búsqueda:{pregunta[:30]}|   documento:{documento}")
     return resultados
 
 def generar_scores_relevancia_llm(datos: List[Tuple[str, str]], 
@@ -94,7 +94,7 @@ def generar_scores_relevancia_llm(datos: List[Tuple[str, str]],
             # Limpia la respuesta de posibles espacios en blanco y la convierte a float.
             score = float(respuesta_llm.strip())
             if not no_log:
-                logger.info(f"Relevancia LLM: {score}|  Pregunta:{pregunta[:25]}|   documento:{documento}")
+                logger.info(f"Relevancia LLM: {score}|  Búsqueda:{pregunta[:30]}|   documento:{documento}")
 
         except (ValueError, TypeError):
             # Si la conversión falla, se imprime una advertencia y se mantiene el score en 0.0.
@@ -122,7 +122,8 @@ def filtrar_documentos_por_relevancia(
     umbral_relevancia: float,
     reranker: Literal["local", "llm"] = "local",
     busqueda_permisiva: bool = False,
-    llm_reranker = None
+    llm_reranker = None,
+    k = 0
 ) -> List[Document]:
     """
     Filtra una lista de documentos, manteniendo solo aquellos cuyo contenido
@@ -148,7 +149,7 @@ def filtrar_documentos_por_relevancia(
     # Cada tupla contiene (pregunta, contenido_del_documento)
     #datos_para_evaluar = [(pregunta, doc.page_content) for doc in documentos]
     datos_para_evaluar = convertir_documentos_a_tuplas(pregunta, documentos)
-    logger.info(f"Documentos a filtrar: {len(documentos)}, Pregunta:{pregunta[:30]}, Relevancia:{umbral_relevancia}, permisiva:{busqueda_permisiva}")
+    logger.info(f"Documentos a filtrar: {len(documentos)}, Búsqueda:{pregunta[:30]}, Umbral relevancia:{umbral_relevancia}, permisiva:{busqueda_permisiva}")
 
     documentos_relevantes = []
     if reranker == "local":
@@ -168,7 +169,7 @@ def filtrar_documentos_por_relevancia(
                 documentos_relevantes.append((documentos[i], score)) # Añade el documento original si es relevante
             
     if len(documentos_relevantes) == 0:
-        logger.warning(f"No se encontraron documentos relevantes para pregunta: '{pregunta}'")
+        logger.warning(f"No se encontraron documentos relevantes para la búsqueda: '{pregunta}'")
         return []
 
     documentos_relevantes = sorted(documentos_relevantes, key=lambda doc: doc[1], reverse=True)
@@ -178,6 +179,9 @@ def filtrar_documentos_por_relevancia(
 
     for doc, score in documentos_relevantes:
         doc.metadata["score_relevancia"] = score
+    
+    if k > 0:
+        documentos_relevantes = documentos_relevantes[:k]
     
     return [doc for doc, score in documentos_relevantes]
 

@@ -29,16 +29,16 @@ def main(args=None):
     docs = cargar_documentos(
         ruta_archivos, 
         tokenizer_hf_model = HF_SMALL_EMBEDDING_MODEL,
-        tipo_exportacion="doc_chunks", 
+        tipo_exportacion="custom_chunks", 
         max_chunk_token_size=MAX_TOKENS_SMALL_EMBEDDING,
     )
 
     
     #Con los mismos chunks pequeños de no más de 256 Tokens, creamos dos colecciones con diferentes embeddings
     #Una con embeddings de 1024 dimensiones (el default para la función)
-    vector_store = poblar_coleccion(COLLECTION_NAME_LARGE, docs, "dense", recrear_coleccion=True)
+    poblar_coleccion(COLLECTION_NAME_LARGE, docs, "dense", recrear_coleccion=True)
     #Otra con embeddings de 384 dimensiones (se debe indicar el modelo de Ollama)
-    small_vector_store = poblar_coleccion(COLLECTION_NAME, docs, "dense", recrear_coleccion=True,
+    poblar_coleccion(COLLECTION_NAME, docs, "dense", recrear_coleccion=True,
                                         embedding_model= OLLAMA_SMALL_EMBEDDING_MODEL, 
                                         dimensiones_vector_denso=SMALL_VECTOR_SIZE)
   

@@ -33,42 +33,35 @@ def main(args=None):
                                 reranker=None,
                                 )
 
-    query = """Identifica las copas, campeonatos o juegos internacionales en las que participó la selección de Perú de mayores 
-    y muestrame solo las 11 ocasiones en que ganó en una tabla indicando el año y la competencia."""
-
-    print("Prueba de consulta con Agente RAG sin Reranker y respuesta resumen")
-    query_rag_hybrid.consultar(query, max_docs_recuperados=5, max_busquedas=5, limite_recursion=15, imprimir_respuesta="resumen")
+    query = "Identifica al segundo máximo goleador histórico de la primera división peruana, muéstrame su nombre, y en una tabla la temporada en la que fue máximo goleador, el club en el que jugaba y la cantidad de goles anotados."
+    
+    print("Prueba de consulta con Agente RAG sin Reranker y respuesta resumen (sin datos de los documentos recuperados)")
+    query_rag_hybrid.consultar(query, max_docs_recuperados=3, max_busquedas=3, limite_recursion=10, imprimir_respuesta="resumen")
     print("\n","*"*100, "\n")
     
-    #Asignamos reranker a la clase para evaluar el mismo agente RAG pero con reranker por modelo reranker ejecutado localmente
+    # #Asignamos reranker a la clase para evaluar el mismo agente RAG pero con reranker por modelo reranker ejecutado localmente
     query_rag_hybrid.reranker = "local"
-    print("Prueba de consulta con Agente RAG usando Reranker con un modelo reranker local, sin filtrado por umbral de relevancia y respuesta total (con documentos recuperados)")
-    query_rag_hybrid.consultar(query, max_docs_recuperados=5, max_busquedas=5, limite_recursion=15, imprimir_respuesta="total")
+    print("Prueba de consulta con Agente RAG usando Reranker con un modelo reranker local, sin filtrado por umbral de relevancia y respuesta resumen")
+    query_rag_hybrid.consultar(query, max_docs_recuperados=3, max_busquedas=3, limite_recursion=10, imprimir_respuesta="resumen")
     print("\n","*"*100, "\n")
     
-    #Asignamos reranker a la clase para evaluar el mismo agente RAG pero con reranker por LLM
+    print("Prueba de consulta con Agente RAG usando Reranker con un modelo reranker local, con umbral de relevancia y respuesta resumen")
+    query_rag_hybrid.consultar(query, max_docs_recuperados=3, max_busquedas=3, limite_recursion=10, imprimir_respuesta="resumen", umbral=0.5)
+    print("\n","*"*100, "\n")
+    
+    # #Asignamos reranker a la clase para evaluar el mismo agente RAG pero con reranker por LLM
     query_rag_hybrid.reranker = "llm"
     #Usaremos un llm más pequeño para el reranker y así reducir costos en esta etapa de evaluación del agente RAG, ya que el reranker se ejecuta varias veces durante la consulta.
     query_rag_hybrid.llm_reranker = init_chat_model("openai/gpt-oss-20b", model_provider="groq", temperature=0.0)
-    print("Prueba de consulta con Agente RAG usando Reranker por LLM y filtrado por umbral de relevancia = 0.5, sin imprimir respuesta")
-    respuesta = query_rag_hybrid.consultar(query, max_docs_recuperados=5, max_busquedas=5, limite_recursion=15, umbral=0.5)
-    print("Respuesta del Agente (Manualmente impresa):\n", respuesta)
+    print("Prueba de consulta con Agente RAG usando Reranker por LLM, y con umbral de relevancia = 0.5 y respuesta resumen")
+    query_rag_hybrid.consultar(query, max_docs_recuperados=3, max_busquedas=3, limite_recursion=10, imprimir_respuesta="resumen", umbral=0.5)
 
     # respuestas_ok = [
-    #     """Las ocasiones en que la selección de Perú ganó en copas, campeonatos o juegos internacionales son:
-    #     | Año | Competición ganada |
-    #     |-----|--------------------|
-    #     | 1938 | Juegos Bolivarianos |
-    #     | 1939 | Campeonato Sudamericano (Copa América) |
-    #     | 1947-1948 | Juegos Bolivarianos |
-    #     | 1961 | Juegos Bolivarianos |
-    #     | 1973 | Juegos Bolivarianos |
-    #     | 1975 | Copa América |
-    #     | 1981 | Juegos Bolivarianos |
-    #     | 1999 | Copa Kirin (empate con Bélgica)|
-    #     | 2000 | Copa Oro de la CONCACAF |
-    #     | 2005 | Copa Kirin |
-    #     | 2011 | Copa Kirin |
+    #     """Oswaldo Ramírez
+    #     | Temporada | Club                | Goles |
+    #     |-----------|---------------------|-------|
+    #     | 1968      | Sport Boys          | 26 |
+    #     | 1980      | Sporting Cristal    | 19 |
     #     """,
     # ]
     

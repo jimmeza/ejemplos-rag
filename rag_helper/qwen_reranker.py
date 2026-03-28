@@ -8,6 +8,7 @@ class QwenReranker:
     def __init__(self, model_name_or_path="Qwen/Qwen3-Reranker-0.6B", device=None):
         self.tokenizer = AutoTokenizer.from_pretrained(model_name_or_path, padding_side='left')
         self.model = AutoModelForCausalLM.from_pretrained(model_name_or_path).eval()
+        #self.tokenizer.deprecation_warnings["Asking-to-pad-a-fast-tokenizer"] = True
         
         if device:
             self.model.to(device)
@@ -54,7 +55,7 @@ class QwenReranker:
         for i, ele in enumerate(inputs['input_ids']):
             inputs['input_ids'][i] = self.prefix_tokens + ele + self.suffix_tokens
         
-        inputs = self.tokenizer.pad(inputs, padding=True, return_tensors="pt", max_length=self.max_length)
+        inputs = self.tokenizer.pad(inputs, padding=True, return_tensors="pt")
         for key in inputs:
             inputs[key] = inputs[key].to(self.model.device)
         return inputs
@@ -86,10 +87,17 @@ class QwenReranker:
         return [(q, d, float(s)) for (q, d), s in zip(pairs, scores)]
 
 def main(args=None):
+    import dotenv
+    dotenv.load_dotenv(override=True)
     # Ejemplo de uso del reranker ejecutando en local usando el modelo reranker "Qwen3-Reranker-0.6B"
     import time
-    start_time = time.time()
 
+    print("Soporta CUDA:", torch.cuda.is_available())
+
+    start_time = time.time()
+    # Inicializamos el reranker con el modelo "Qwen3-Reranker-0.6B", que es un modelo específico para reranking, 
+    # optimizado para esta tarea y que se puede ejecutar localmente en una GPU o CPU
+    # intentaremos usar GPU si está disponible, pero el modelo también se puede ejecutar en CPU aunque con tiempos de ejecución más largos.
     reranker = QwenReranker()
     
     task = None
